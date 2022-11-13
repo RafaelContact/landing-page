@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    display: grid;
+    grid-template-areas: ;
+}
+
+/* HEADER  */
+
+.header{
+    grid-area: area;
+}
+
+/* HERO  */
+
+.hero{
+    grid-area: hero;
+}
+
+/* ABOUT */
+
+.about{
+    grid-area: about;
+}
+
+/* SERVICES- */
+
+.services{
+    grid-area: services;
+}
+
+/* PROJECTS */
+
+.projects{
+    grid-area: projects;
+}
+
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+}
