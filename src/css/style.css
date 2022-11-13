@@ -1,43 +1,63 @@
 html{
     font-size: 62.5%;
+    background-color: gray;
 }
 body{
     display: grid;
-    grid-template-areas: ;
+    /* serão 6 linhas e 4 colunas , apesar de uma das linhas parecer ser 2 foi dividido pelo número de seções */
+    grid-template-areas:  "header header header header" 
+                            "hero hero hero hero"
+                            "about about about about"
+                            "services services services services"
+                            "projects projecs projects projecs"
+                            "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    background-color: antiquewhite;
+    font-size: 1.6rem;
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 400;
+    height: 100vh;
 }
 
 /* HEADER  */
 
 .header{
-    grid-area: area;
+    grid-area: header;
+    background-color: red;
 }
 
 /* HERO  */
 
 .hero{
     grid-area: hero;
+    background-color: blue;
 }
 
 /* ABOUT */
 
 .about{
     grid-area: about;
+    background-color: aqua;
 }
 
 /* SERVICES- */
 
 .services{
     grid-area: services;
+    background-color: chocolate;
 }
 
 /* PROJECTS */
 
-.projects{
+.projects
+{
     grid-area: projects;
+    background-color: darkgreen;
 }
 
 /* FOOTER */
 
 .footer{
     grid-area: footer;
+    background-color: darkmagenta;
 }
