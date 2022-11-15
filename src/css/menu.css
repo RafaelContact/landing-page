@@ -56,9 +56,11 @@
 
 /* O dele também não apresenta tamanho, consultar imagem nos arquivos */
 .header input:checked ~ label .hamburguer{
+    transition-delay: 0.3s;
     transform: rotate(45deg);
 }
 .header  input:checked ~ label .hamburguer:before{
+    transition-delay: 0.2s;
     transform: rotate(90deg);
     top: 0;
 }
@@ -69,8 +71,33 @@
 @media(max-width: 900px){
     .header .menu{
         display: block;
+        align-self: flex-end;
+    }
+    .header nav label{
+        display: flex;
+        flex-direction: column;
     }
     .header  nav ul {
         display: none;
+    }
+    .header input:checked ~ ul{
+        display: block;
+    }
+    .header nav {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        z-index: 1;
+    }
+    .header nav ul {
+        width: 200px;
+        background-color: #ffffff;
+        padding: 20px;
+
+    }
+    .header nav ul a{
+        text-align: center;
+        padding: 20px;
+        display: block;
     }
 }
