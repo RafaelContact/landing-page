@@ -163,6 +163,10 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
+.services .service{
+    padding: 70px 20px;
+    text-align: center;
+}
 .services .service img{
     width: 250px;
     margin-bottom: 30px;
@@ -186,6 +190,12 @@ body{
 }
 .services .service:nth-child(2){
     background-color: lightpink;
+}
+
+@media (max-width: 425px){
+    .services{
+        grid-template-columns: 1fr ;
+    }
 }
 /* PROJECTS */
 
