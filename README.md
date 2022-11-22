@@ -2,7 +2,7 @@
 <div align="center">
   <h1>landing-page</h1>
 
-  ![Agencia XYZ](https://rafinha-dev.github.io/landing-page/)
+  <a href="https://rafinha-dev.github.io/landing-page/">Pagina hospedada</a>
   
   `clique no link para abrir o site`
   
