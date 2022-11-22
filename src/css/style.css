@@ -7,6 +7,7 @@ body{
     display: grid;
     /* serão 6 linhas e 4 colunas , apesar de uma das linhas parecer ser 2 foi dividido pelo número de seções */
     grid-template-areas:  "header header header header" 
+                            "behavior behavior behavior behavior"
                             "hero hero hero hero "
                             "about about about about  "
                             "services services services services"
@@ -17,6 +18,7 @@ body{
     font-size: 1.6rem;
     font-family: 'Roboto', "sans-serif";
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 /* HEADER  */
@@ -24,6 +26,7 @@ body{
 .header{
     grid-area: header;
     background-color: white;
+    
 }
 .header .header-container{
     display: flex;
@@ -47,6 +50,11 @@ body{
 
 /* HERO  */
 
+main.behavior{
+    grid-area: behavior;
+    
+    
+}
 
 .hero{
     grid-area: hero;
