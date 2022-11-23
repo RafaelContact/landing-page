@@ -53,13 +53,12 @@ body{
 /* HERO  */
 
 main.behavior{
-    grid-area: behavior;
-    
-    
+    grid-area: behavior;   
+    padding-top: 70px;
 }
 
 .hero{
-    margin-top: 70px;
+
     grid-area: hero;
     height: 86vh;
     background: url('../images/lemons.jpg') center no-repeat;
@@ -101,6 +100,7 @@ main.behavior{
     .hero h2{
         font-size: 2.5rem;
     }
+    
 }
 
 /* ABOUT */
@@ -286,4 +286,9 @@ main.behavior{
 }
 .footer .social a:hover{
     color: #fff;
+}
+@media(max-width: 426px){
+    .footer .social a {
+        margin: 4px;
+    }
 }
